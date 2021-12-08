@@ -1,33 +1,301 @@
-        <!-- Background Video-->
-        <!-- Masthead-->
-        <%= video_tag "bg.mp4", class: "bg-video", playsinline: "playsinline", autoplay: "autoplay", muted: "muted", loop: "loop", type: "video/mp4", controls: "controls" %>
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                  <p class="mb-5">Beginning guitar lessons. Integrate music into your life and build a stronger community with us.</p>
-
-                    <p class="mb-5">We love music and we think you do too. Music is a powerful tool. It moves people and captures a point like no other medium. The brains of musicians have stronger structural and functional connections. We strive to teach in the most fun and engaging way possible. You will learn using hand picked iconic tunes from some of the world’s biggest artists across a diverse range of genres. We want your love of music to increase and we will provide you with a wealth of technical, stylistic and theoretical knowledge that’s second to none.
-</p>
-                    <p class="mb-5">Please contact me.</p>
-                    <p class="mb-5">logan@musicinthepines.org
-                    </br>208-304-8365
-                    </p>
+<%= render "nav_bar" %>
+<header id="home-header" class="bg-dark py-5" >
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white
+                      mb-2">Guitar Lessons</h1>
+                    <p class="lead text-white-50 mb-4">Learn to play
+                    what you hear, using the
+                      worlds most iconic songs, with Music In The Pines, the
+                      music school for North Idaho.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#contactForm">Get Started</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Social Icons-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+    </div>
+</header>
 
-                <!-- Social Icons--
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                >
-                <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
+<section class="py-5 border-bottom" id="studio">
+  <div id="carouselStudio" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag "studio_inside", class: "d-block w-100 studio_image" %>
+      </div>
 
-                <a class="btn btn-dark m-3" href="https://www.instagram.com/musicinthepinesidaho"><i class="fab fa-instagram"></i></a>
+      <div class="carousel-item">
+        <%= image_tag "studio_inside_jack", class: "d-block w-100 studio_image" %>
+      </div>
 
-                <a class="btn btn-dark m-3" href="https://www.facebook.com/Music-In-The-Pines-104164641953215"><i class="fab fa-facebook-f"></i></a>
+      <div class="carousel-item">
+        <%= image_tag "studio_inside_addison", class: "d-block w-100 studio_image" %>
+      </div>
+
+      <div class="carousel-item">
+        <%= image_tag "studio_inside_chance", class: "d-block w-100 studio_image" %>
+      </div>
+
+      <div class="carousel-item">
+        <%= image_tag "studio_outside", class: "d-block w-100 studio_image" %>
+      </div>
+
+
+
+
+
+    <a class="carousel-control-prev" href="#carouselStudio" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselStudio" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- Features section-->
+<section class="py-5 border-bottom" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="h4 fw-bolder">Philosophy</h2>
+                <p>Playing music is fun, therefore learning to play music should 
+                be fun. We want you to enjoy playing music so that you develop a 
+                skill for life and share your music with those around you.</p>
+                           </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="h4 fw-bolder">What You Will Learn</h2>
+                <p>Using over 100 iconic songs, you will develop a deep 
+                understanding of music Rythm, Harmony, and Melody. This will give you
+                the tools you need to play any song as well as create your own music.</p>
+               
+            </div>
+            <div class="col-lg-4">
+                <h2 class="h4 fw-bolder">Ideal Student</h2>
+                <p>We are currently seeking beggining guitar students, who are
+                interested in picking up a guitar and practicing. If you plan on 
+                playing around the campfire, or large venues, or just at home, we 
+                can help you get from beginner to advanced.</p>
+              
             </div>
         </div>
+    </div>
+</section>
+<!-- Pricing section-->
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Pay as you grow</h2>
+            <p class="lead mb-0">With our no hassle pricing plans</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- Pricing card free-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">Good for young children just starting out.</div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$60</span>
+                            <span class="text-muted">/ mo.</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>20 Minutes 4x month</strong>
+                            </li>
+                            <%#
+                            <li class="mb-2 text-muted">
+                                <i class="bi bi-x"></i>
+                                Open Jam Sessions
+                            </li>
+                            %>
+                        </ul>
+                        <%# <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div> %>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card pro-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            Recommended
+                        </div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$90</span>
+                            <span class="text-muted">/ mo.</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>30 Minutes 4x month</strong>
+                            </li>
+                            <%#
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Open Jam Sessions
+                            </li>
+                            %>
+                        </ul>
+                        <%#
+                        <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
+                        %>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card enterprise-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">Good for serious students that have a lot of time for daily practice.</div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$165</span>
+                            <span class="text-muted">/ mo.</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>1 Hour 4x month</strong>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Open Jam Sessions Weekly
+                            </li>
+                        </ul>
+                        <%# <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div> %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials section-->
+<section class="py-5 border-bottom">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Testimonials</h2>
+            <p class="lead mb-0">Our musicians love working with us</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- Testimonial 1-->
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">Thank you for making learning guitar fun for my son. We loved working with you, and we will be recommending you to others!</p>
+                                <div class="small text-muted">- Jessica, Athol ID</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2-->
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">I tried learning on my own but I knew I should be making better progress. Logan helped me put the pieces together. Thank you!!</p>
+                                <div class="small text-muted">- Chris, Spirit Lake ID</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section-->
+<section class="bg-light py-5">
+    <div class="container px-5 my-5 px-5">
+        <div id="contactInfo" class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2 class="fw-bolder">Get in touch</h2>
+            <p class="lead mb-0">We'd love to hear from you</p>
+            <ul class="list-unstyled mb-0">
+              <li><a href="https://goo.gl/maps/hmMLyw5Q8WCxJPxN9" target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+                    <p>31848 N 4th Ave, Spirit Lake, ID 83869</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>(208) 304-8365</p>
+                </li>
+
+                <li><a href="mailto:logan@musicinthepines.org&subject=Guitar Lessons"> <i class="fas fa-envelope mt-4 fa-2x"></i></a>
+                    <p>logan@musicinthepines.org</p>
+                </li>
+            </ul>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token=<%= ENV["start_bootstrap_form"]%>>
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Music In The Pines 2021</p></div>
+</footer>
 
