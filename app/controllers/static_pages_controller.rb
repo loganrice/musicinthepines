@@ -5,4 +5,6 @@ class StaticPagesController < ApplicationController
   end
   def login
   end
+  def policy
+  end
 end

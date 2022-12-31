@@ -1,24 +1,5 @@
 <!-- Responsive navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container px-5">
-    <a href=<%= root_path %> class="navbar-brand">
-      <%= image_tag "guitar_head.png", width: "30", height: "30" %>
-      Music In The Pines
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-        <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %>About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contactInfo">Contact</a></li>
-        <li class="nav-item"><%= link_to "Login", login_path, class: "nav-link" %>Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<%= render 'nav_bar' %>
 
 <header id="home-header" class="bg-dark py-5" >
     <div class="container px-5">
@@ -32,7 +13,7 @@
                     with Music In The Pines, the
                     music school for North Idaho.</p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#contactForm">Get Started</a>
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#contactInfo">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -234,35 +215,7 @@
     </div>
 </section>
 %>
-<!-- Contact section-->
-<section class="bg-light py-5">
-    <div class="container px-5 my-5 px-5">
-        <div id="contactInfo" class="text-center mb-5">
-            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-            <h2 class="fw-bolder">Get in touch</h2>
-            <p class="lead mb-0">We'd love to hear from you</p>
-            <ul class="list-unstyled mb-0">
-              <li><a href="https://goo.gl/maps/hmMLyw5Q8WCxJPxN9" target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a>
-                    <p>31848 N 4th Ave, Spirit Lake, ID 83869</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>(208) 304-8365</p>
-                </li>
-
-                <li><a href="mailto:logan@musicinthepines.org&subject=Guitar Lessons"> <i class="fas fa-envelope mt-4 fa-2x"></i></a>
-                    <p>logan@musicinthepines.org</p>
-                </li>
-            </ul>
-        </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-             <script type='text/javascript' src='https://app.mymusicstaff.com/Widget/v3/Registration.ashx?id=sch_Hh3JT' class='sb_registration'></script> 
-            </div>
-        </div>
-    </div>
-</section>
-
+<%= render 'contact' %>
 <!-- Footer-->
 <footer class="py-5 bg-dark">
     <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Music In The Pines 2021</p></div>
